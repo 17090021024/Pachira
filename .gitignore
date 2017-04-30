@@ -1,0 +1,7 @@
+*.exe
+*.ex4
+*.mq4
+*.dat
+*.user
+/**/obj/
+.DS_Store

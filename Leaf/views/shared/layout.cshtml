@@ -1,0 +1,27 @@
+﻿@{
+    string staticRoot = System.Configuration.ConfigurationManager.AppSettings["StaticRoot"];
+    string controller = ViewContext.RouteData.Values["controller"].ToString().ToLower();
+    string action = ViewContext.RouteData.Values["action"].ToString().ToLower();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon shortcut bookmark" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="apple-touch-icon" href="data:;base64,iVBORw0KGgo=" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="@(staticRoot)static/shared/element.css">
+    <link rel="stylesheet" href="@(staticRoot)static/@(controller)/@(action).css">
+    @RenderSection("head")
+</head>
+<body>
+    @RenderSection("body")
+    <script type="text/javascript" src="@(staticRoot)static/shared/vue.js"></script>
+    <script type="text/javascript" src="@(staticRoot)static/shared/vue-resource.js"></script>
+    <script type="text/javascript" src="@(staticRoot)static/shared/element.js"></script>
+    <script type="text/javascript" src="@(staticRoot)static/@(controller)/@(action).js"></script>
+</body>
+</html>
