@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{690D309C-6B32-48A8-A84C-7D6416985949}</ProjectGuid>
+    <ProjectGuid>{862D0612-38CE-4D66-AFED-CAF6896C995F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TrunkDB</RootNamespace>
-    <AssemblyName>TrunkDB</AssemblyName>
+    <RootNamespace>TrunkBiz</RootNamespace>
+    <AssemblyName>TrunkBiz</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

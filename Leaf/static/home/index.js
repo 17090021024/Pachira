@@ -1,6 +1,9 @@
-﻿new Vue({
+﻿var app = new Vue({
     el: '#app',
-    data: function () {
-        return { visible: false }
+    data: {
+        visible: false,
+        input: "wq",
+        datetime1: ""
     }
-})
+});
+

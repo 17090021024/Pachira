@@ -6,7 +6,18 @@
     <div id="app">
         <el-button>按钮</el-button>
         <el-dialog v-model="visible" title="Hello world">
-      <p>欢迎使用 Element</p>
-    </el-dialog>
+          <p>欢迎使用 Element</p>
+        </el-dialog>
+        <el-input v-model="input" placeholder="请输入内容"></el-input>
+        <template>
+            <div class="block">
+            <span class="demonstration">默认</span>
+            <el-date-picker
+                v-model="datetime1"
+                type="datetime"
+                placeholder="选择日期时间">
+            </el-date-picker>
+            </div>
+        </template>
     </div>
 }
